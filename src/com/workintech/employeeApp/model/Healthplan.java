@@ -29,7 +29,7 @@ public class Healthplan {
     }
 
     public String toString(){
-        return "Healthplan = " + "id: " + id + " name: " + name + " plan: " + plan;
+        return "Healthplan = " + "id: " + id + " name: " + name + " plan: (" + plan.getName() + "-" + plan.getPrice() + ")";
     }
 
 }
