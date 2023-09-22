@@ -1,5 +1,7 @@
 package com.workintech.employeeApp.model;
 
+import java.util.Arrays;
+
 public class Company {
     private int id;
     private String name;
@@ -48,5 +50,15 @@ public class Company {
         }catch (ArrayIndexOutOfBoundsException ex){
             System.out.println("Olmayan index için atama yapıldı." + index);
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Company{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", giro=" + giro +
+                ", developerNames=" + Arrays.toString(developerNames) +
+                '}';
     }
 }
